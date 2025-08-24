@@ -38,6 +38,7 @@ srv.post("/", async (c) => {
 			const inserted = await e.insert(e.Tag, {
 				name: (req as any).parameter.name,
 				type: (req as any).parameter.type,
+				_id: crypto.randomUUID(),
 			}).run(gc);
 
 			// 追加 owners（逐个追加，EdgeQL JS 使用 "+=" 语法需要写成 { owned_tags: { "+=": expr } }
@@ -107,6 +108,7 @@ srv.post("/", async (c) => {
 			const inserted = await e.insert(e.User, {
 				name: (req as any).parameter.name,
 				email: (req as any).parameter.email,
+				_id: crypto.randomUUID(),
 			}).run(gc);
 			const selected = await e.select(e.User, (user) => ({
 				filter: e.op(user.id, "=", inserted.id),
@@ -153,6 +155,7 @@ srv.post("/", async (c) => {
 		case "author.create": {
 			const inserted = await e.insert(e.Author, {
 				name: (req as any).parameter.name,
+				_id: crypto.randomUUID(),
 			}).run(gc);
 			const selected = await e.select(e.Author, (author) => ({
 				filter: e.op(author.id, "=", inserted.id),
@@ -210,6 +213,7 @@ srv.post("/", async (c) => {
 						id: true,
 					}),
 				),
+				_id: crypto.randomUUID(),
 			}).run(gc);
 			const selected = await e.select(e.Chapter, (chapter) => ({
 				filter: e.op(chapter.id, "=", inserted.id),
@@ -259,6 +263,7 @@ srv.post("/", async (c) => {
 				name,
 				length: 0,
 				grabbed_from: "manual",
+				_id: crypto.randomUUID(),
 			}).run(gc) as any;
 			const selected = await e.select(e.Book, (book) => ({
 				filter: e.op(book.id, "=", inserted.id),

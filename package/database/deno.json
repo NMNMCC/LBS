@@ -1,6 +1,5 @@
 {
-	"name": "database",
-	"version": "0.0.1",
+	"name": "@ics/database",
 	"exclude": [
 		"./generated/"
 	],
@@ -22,10 +21,11 @@
 		"generate": "deno task generate:query && deno task generate:interface && deno task generate:edgeql-js"
 	},
 	"exports": {
-		".": "./mod.ts"
+		".": "./mod.ts",
+		"./interface": "./generated/interface.ts"
 	},
 	"imports": {
 		"drizzle-kit": "npm:drizzle-kit@^0.31.4",
-		"drizzle-orm": "npm:drizzle-orm@^0.44.4"
+		"drizzle-orm": "npm:drizzle-orm@^0.44.5"
 	}
 }

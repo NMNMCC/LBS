@@ -4,7 +4,7 @@
 		"lib": ["dom", "esnext", "deno.ns"]
 	},
 	"imports": {
-		"@types/node": "npm:@types/node@^24.2.1",
+		"@types/node": "npm:@types/node@^24.3.0",
 		"prettier": "npm:prettier@^3.6.2",
 		"@intzaaa/logger": "npm:@intzaaa/logger@^2.0.0",
 		"dayjs": "npm:dayjs@^1.11.13",

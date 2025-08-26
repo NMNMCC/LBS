@@ -1,3 +1,21 @@
+import z, { type ZodType } from "zod";
+
+export const selectable = <
+	TBase,
+	TParameter extends object,
+>(
+	schema: ZodType<TParameter>,
+): ZodType<
+	Input<
+		TBase,
+		TParameter,
+		Select<TBase>
+	>
+> => z.object({
+	parameter: schema,
+	select: z.any(),
+});
+
 /**
  * Array selection descriptor for arrays.
  * Tuple of [item selection, pagination options].
@@ -99,17 +117,14 @@ export type Result<TBase, TSelect extends Select<TBase>> = TBase extends object
  * Typed operation request envelope.
  * { operation, parameter, select }
  * @template TBase Result base type before selection
- * @template TOperation Operation identifier (string)
  * @template TParameter Operation parameters
  * @template TSelect Selection to apply to TBase
- * @template TFailureResponse Failure response type(s) (propagated to Output)
  */
 export type Input<
 	TBase,
-	TOperation extends string,
-	TParameter extends object,
+	TParameter,
 	TSelect extends Select<TBase> = Select<TBase>,
-> = { operation: TOperation; parameter: TParameter; select: TSelect };
+> = { parameter: TParameter; select: TSelect };
 
 /**
  * Typed operation response union.

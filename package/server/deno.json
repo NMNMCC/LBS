@@ -5,6 +5,10 @@
 		".": "./mod.ts"
 	},
 	"imports": {
-		"hono": "npm:hono@^4.9.1"
+		"@orpc/client": "npm:@orpc/client@^1.8.5",
+		"@orpc/openapi": "npm:@orpc/openapi@^1.8.5",
+		"@orpc/server": "npm:@orpc/server@^1.8.5",
+		"hono": "npm:hono@^4.9.4",
+		"pino": "npm:pino@^9.9.0"
 	}
 }

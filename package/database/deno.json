@@ -1,8 +1,6 @@
 {
 	"name": "@ics/database",
-	"exclude": [
-		"./generated/"
-	],
+	"version": "0.0.1",
 	"fmt": {
 		"exclude": [
 			"./generated/"
@@ -23,9 +21,5 @@
 	"exports": {
 		".": "./mod.ts",
 		"./interface": "./generated/interface.ts"
-	},
-	"imports": {
-		"drizzle-kit": "npm:drizzle-kit@^0.31.4",
-		"drizzle-orm": "npm:drizzle-orm@^0.44.5"
 	}
 }

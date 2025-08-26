@@ -12,7 +12,7 @@ import {
   Cardinality,
   // BaseType,
   type typeutil,
-} from "npm:gel/dist/reflection/index.js";
+} from "npm:gel@2.1.1/dist/reflection/index.js";
 
 import { cardutil } from "./cardinality.ts";
 

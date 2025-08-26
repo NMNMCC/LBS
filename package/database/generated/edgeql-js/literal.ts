@@ -9,7 +9,7 @@ import type {
 
 import { $expressionify } from "./path.ts";
 import { spec } from "./__spec__.ts";
-import { Cardinality, ExpressionKind } from "npm:gel/dist/reflection/index.js";
+import { Cardinality, ExpressionKind } from "npm:gel@2.1.1/dist/reflection/index.js";
 import { makeType } from "./hydrate.ts";
 
 export type $expr_Literal<Type extends BaseType = BaseType> = Expression<{

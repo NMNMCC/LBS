@@ -8,7 +8,7 @@ import {
   RelativeDuration,
   ConfigMemory,
   DateDuration,
-} from "npm:gel";
+} from "npm:gel@2.1.1";
 import type { $bool, $number } from "./modules/std.ts";
 
 import {
@@ -16,7 +16,7 @@ import {
   ExpressionKind,
   TypeKind,
   OperatorKind,
-} from "npm:gel/dist/reflection/index.js";
+} from "npm:gel@2.1.1/dist/reflection/index.js";
 import { makeType } from "./hydrate.ts";
 
 import { cardutil } from "./cardinality.ts";

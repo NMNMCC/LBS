@@ -1,5 +1,9 @@
 import { assertEquals } from "@std/assert";
-import { flat, hierarchical, type HierarchicalTree } from "./tree.ts";
+import {
+	flat,
+	hierarchical,
+	type HierarchicalTree,
+} from "../../server/util/tree_test.ts";
 
 Deno.test("flat", () => {
 	const hierarchical: HierarchicalTree = [{

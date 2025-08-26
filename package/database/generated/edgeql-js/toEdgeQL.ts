@@ -9,14 +9,14 @@ import {
   DateDuration,
   Range,
   InputDataError,
-} from "npm:gel";
+} from "npm:gel@2.1.1";
 import {
   Cardinality,
   ExpressionKind,
   OperatorKind,
   TypeKind,
   util,
-} from "npm:gel/dist/reflection/index.js";
+} from "npm:gel@2.1.1/dist/reflection/index.js";
 import {
   type $expr_Array,
   type $expr_NamedTuple,
@@ -39,7 +39,7 @@ import type {
   $expr_PathNode,
   $expr_TypeIntersection,
 } from "./path.ts";
-import { reservedKeywords } from "npm:gel/dist/reflection/index.js";
+import { reservedKeywords } from "npm:gel@2.1.1/dist/reflection/index.js";
 import type { $expr_Cast } from "./cast.ts";
 import type { $expr_Detached } from "./detached.ts";
 import type { $expr_For, $expr_ForVar } from "./for.ts";

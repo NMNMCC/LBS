@@ -1,5 +1,5 @@
 {
-	"name": "@ics/library-server",
+	"name": "@ics/server",
 	"version": "0.0.1",
 	"exports": {
 		".": "./mod.ts"

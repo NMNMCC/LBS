@@ -1,5 +1,6 @@
 {
 	"name": "@ics/contract",
+	"version": "0.0.1",
 	"compilerOptions": {
 		"skipLibCheck": true
 	},

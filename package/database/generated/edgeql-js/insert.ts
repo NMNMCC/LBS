@@ -5,7 +5,7 @@ import {
   ExpressionKind,
   type typeutil,
   TypeKind,
-} from "npm:gel/dist/reflection/index.js";
+} from "npm:gel@2.1.1/dist/reflection/index.js";
 import type {
   Expression,
   LinkDesc,

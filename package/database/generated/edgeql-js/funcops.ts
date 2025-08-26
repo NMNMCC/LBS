@@ -4,7 +4,7 @@ import {
   Cardinality,
   type introspect,
   TypeKind,
-} from "npm:gel/dist/reflection/index.js";
+} from "npm:gel@2.1.1/dist/reflection/index.js";
 import { cardutil } from "./cardinality.ts";
 import { makeType } from "./hydrate.ts";
 import type {
@@ -21,7 +21,7 @@ import { cast } from "./cast.ts";
 import { isImplicitlyCastableTo, literalToTypeSet } from "./castMaps.ts";
 import { literal } from "./literal.ts";
 
-import type { ExpressionKind, OperatorKind } from "npm:gel/dist/reflection/index.js";
+import type { ExpressionKind, OperatorKind } from "npm:gel@2.1.1/dist/reflection/index.js";
 
 export type $expr_Function<
   // Name extends string = string,

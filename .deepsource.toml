@@ -1,0 +1,9 @@
+version = 1
+exclude_patterns = ["**/generated/**", "**/*test.*"]
+test_patterns = ["**/*test.*"]
+
+[[analyzers]]
+name = "javascript"
+
+[analyzers.meta]
+environment = ["nodejs"]
